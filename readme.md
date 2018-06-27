@@ -18,3 +18,6 @@ window.customElements.define("cc-bike",CcBike);
 ```
 ### HTML template
 
+### Shadow DOM
+
+permet l encapsulation du DOM
