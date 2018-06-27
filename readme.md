@@ -16,3 +16,5 @@ class CcBike extends HTMLElement{
 window.customElements.define("cc-bike",CcBike);
 
 ```
+### HTML template
+
