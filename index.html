@@ -4,17 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<script src="cc-bike.js"></script>
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+<!-- <script src="cc-bike.js"></script>
 <script src="cc-component.shop.js"></script>
 <script src="cc-vehicule.js"></script>
-<script src="cc-countdown.js"></script>
+<script src="cc-countdown.js"></script> -->
+<!-- <script src="api-map.js"></script> -->
+<script src="cc-map.js"></script>
 </head>
 <body>
-    <h1>Hello World</h1>
+<!--     <h1>Hello World</h1>
 <cc-bike></cc-bike>
 <cc-smartphone-shop></cc-smartphone-shop>
 <cc-plane></cc-plane>
 <cc-countdown duration=10 purpose="oeufs à la coque"></cc-countdown>
-<cc-countdown duration=50 purpose="roti"></cc-countdown>
+<cc-countdown duration=50 purpose="roti"></cc-countdown> -->
+
+<cc-map zoom=12 id="my-map"></cc-map>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAaePC2p9Cnf7cDQLKb4nnpck2onLn0SZk&callback=googleMapsLoaded" async defer></script>
+<script>
+    function googleMapsLoaded() {
+        // by resolving our promise, googleMapsDownloadPromise.then() inside connectedCallback() of cc-map component will be called
+       console.log('allo');
+        window.resolveGoogleMapsLoaded();
+    }
+</script>
 </body>
 </html
