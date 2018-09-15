@@ -3,7 +3,7 @@
 ###  Custom Components
 
 
-```
+```javascript
 // NE MARCHE PAS AVEC FIREFOX 61!!!!!!!!! (Juin 2018)
 // déclaration de la classe
 class CcBike extends HTMLElement{
@@ -32,7 +32,7 @@ this.getAttribute('duration')
 
 ## -1  static get observedAttributes
 // methode static qui retourne l(es)attribut(s) que vous souhaitez observer
-```
+```javascript
 //<cc-countdown duration=10 purpose="oeufs à la coque"></cc-countdown>
 
 
@@ -46,7 +46,7 @@ this.getAttribute('duration')
 
 attributeChangedCallback un callback qui permet de connaitre le nom , ancienn valleur , nouvelle valeur
 
-```
+```javascript
 attributeChangedCallback(name, oldValue, newValue) {
 
 }
@@ -57,7 +57,7 @@ attributeChangedCallback(name, oldValue, newValue) {
 
 permet l encapsulation du DOM ,CSS, HTML , JS , CPT 
 
-```
+```javascript
  this._root = this.attachShadow({mode:'open'});//for shadow DOM 
 
 ```
